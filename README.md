@@ -46,7 +46,7 @@ Disease.sh Documentation can be found [here](https://disease.sh/docs/)
 2. In the new folder you will find a `example.env` file, duplicate it and rename it to `.env` only.
 3. in the new `.env` file, change `REDIS_HOST` to localhost
 4. Change the env variables to fit your environment (leave them blank for default values)
-6. In one window run `redis-server`
+6. In one window run `redis-server` (default port is 6379 but can be overridden with the `--port` parameter - EX: `redis-server --port 6380`)
 7. Run `npm ci` to install the packages
 8. In another window run `npm run start:dev`
 9. Open your browser and navigate to `localhost:{PORT}` (PORT being the port specified in your `.env` file)
